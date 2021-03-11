@@ -1,0 +1,17 @@
+<library path="rqt_cascade_hfsm">
+  <class name="rqt_cascade_hfsm/CascadeHFSM" type="rqt_cascade_hfsm::CascadeHFSM" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      A GUI plugin to create HFSMs using cascade lifecycle.
+    </description>
+    <qtgui>
+      <group>
+        <label>Visualization</label>
+        <icon type="theme">folder</icon>
+        <statustip>Plugins related to visualization.</statustip>
+      </group>
+      <label>Cascade HFSM</label>
+      <icon type="theme">image-x-generic</icon>
+      <statustip>A GUI plugin for creating HFSMs using cascade lifecycle.</statustip>
+    </qtgui>
+  </class>
+</library>

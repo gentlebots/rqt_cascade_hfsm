@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+import sys
+
+from rqt_gui.main import Main
+
+
+def add_arguments(parser):
+    group = parser.add_argument_group('Options for rqt_cascade_hfsm plugin')
+
+main = Main()
+sys.exit(main.main(
+    sys.argv,
+    standalone='rqt_cascade_hfsm/CascadeHFSM',
+    plugin_argument_provider=add_arguments))
