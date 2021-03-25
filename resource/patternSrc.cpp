@@ -27,7 +27,7 @@ INITIAL_ITERATION
 
   loop_timer_ = create_wall_timer(
     std::chrono::duration<double, std::ratio<1>>(1.0 / frequency),
-    std::bind(&TestHFSM::tick, this));
+    std::bind(&ID::tick, this));
 
   state_pub_->on_activate();
   return CascadeLifecycleNode::on_activate(previous_state);
